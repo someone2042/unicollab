@@ -36,7 +36,7 @@
   <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/" class="logo d-flex align-items-center">
         <img src="{{asset('assets/img/logomid.png')}}" alt="">
         <span>UniCollab</span>
       </a>
@@ -44,10 +44,11 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
           <li><a class="nav-link scrollto" href="#values">Benefits</a></li>
           <li><a class="nav-link scrollto" href="#services">Feature</a></li>
           <li><a class="nav-link scrollto" href="#footer">Contact</a></li>
-          <li><a class="getstarted scrollto" href="./login.html">Get Started</a></li>
+          <li><a class="getstarted scrollto" href="/login">Get Started</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -67,7 +68,7 @@
           </h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a href="./login.html"
+              <a href="/login"
                 class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Get Started</span>
                 <i class="bi bi-arrow-right"></i>
@@ -272,6 +273,7 @@
       </div>
 
     </section><!-- End Services Section -->
+    <x-flash-message />
 
   </main><!-- End #main -->
 
@@ -281,7 +283,7 @@
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-5 col-md-12 footer-info">
-            <a href="index.html" class="logo d-flex align-items-center">
+            <a href="/" class="logo d-flex align-items-center">
               <img src="{{asset('assets/img/logomid.png')}}" alt="">
               <span>UniCollab</span>
             </a>
@@ -301,7 +303,7 @@
               <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Feature</a></li>
               <li><i class="bi bi-chevron-right"></i> <a href="#">Benefits</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Get started</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="/login">Get started</a></li>
             </ul>
           </div>
 
