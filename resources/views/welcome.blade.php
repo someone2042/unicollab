@@ -273,7 +273,6 @@
       </div>
 
     </section><!-- End Services Section -->
-    <x-flash-message />
 
   </main><!-- End #main -->
 
