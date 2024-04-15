@@ -15,3 +15,7 @@ Route::post('/register', [UserController::class, 'store'])->name('user.register'
 Route::get('/email/verify', [EmailController::class, 'verify_email'])->middleware('auth')->name('verification.notice');
 
 Route::get('/email/verify/{id}/{hash}', [EmailController::class, 'verify'])->middleware(['auth', 'signed'])->name('verification.verify');
+
+Route::get('/groups', function () {
+    return view('groups');
+});

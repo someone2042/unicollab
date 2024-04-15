@@ -15,6 +15,6 @@ class EmailController extends Controller
     public function verify(EmailVerificationRequest $request)
     {
         $request->fulfill();
-        return redirect('/')->with('message', 'Your account has been created!');
+        return redirect('/groups')->with('message', 'Your account has been created!');
     }
 }
